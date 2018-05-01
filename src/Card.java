@@ -42,9 +42,8 @@ public class Card {
         this.color = color;
     }
 
-    //Testing git
     public String toString(){
-        return "Card"
+        return String.format("%s of %s", String.valueOf(this.suit),String.valueOf(this.value) )
     }
 }
 
