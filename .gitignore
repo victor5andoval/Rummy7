@@ -5,3 +5,5 @@ out/production/Rummy7/GameDiscardPIle.class
 out/production/Rummy7/Player.class
 out/production/Rummy7/Rummy7Constants.class
 out/production/Rummy7/SimulateRummy7.class
+.DS_Store
+src/.idea/

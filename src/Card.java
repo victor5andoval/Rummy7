@@ -41,5 +41,10 @@ public class Card {
     public void setColor(boolean color) {
         this.color = color;
     }
+
+    //Testing git
+    public String toString(){
+        return "Card"
+    }
 }
 
