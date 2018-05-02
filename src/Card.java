@@ -30,5 +30,9 @@ public class Card {
     public void setColor(boolean color) {
         this.color = color;
     }
+
+    public String toString(){
+        return String.format("%s of %s", String.valueOf(this.suit),String.valueOf(this.value) )
+    }
 }
 
