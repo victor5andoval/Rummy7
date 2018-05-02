@@ -1,8 +1,16 @@
+import java.util.ArrayList;
+
 public class Player {
     private int score;
     private RummyGameDeck deck;
     private String name;
     //TODO to add playerGame or not?
+
+    public Player(String name) {
+        if (name != null && name != "") setName(name);
+        setScore(0);
+        setDeck(new RummyGameDeck(new ArrayList<Card>()));
+    }
 
     public int getScore() {
         return score;

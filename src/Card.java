@@ -4,17 +4,6 @@ public class Card {
     private char suit;
     private int value;
     private boolean color;
-    private String ui_color;
-
-    public Card () {
-        ui_color = color?Rummy7Constants.CARD_STRING_COLOR_RED:Rummy7Constants.CARD_STRING_COLOR_BLACK;
-        //TODO Do the same as above for suits
-    }
-
-    //user friendly string equivalent of color. Ie, Red, Black
-    public String getUi_color() {
-        return ui_color;
-    }
 
     public char getSuit() {
         return suit;

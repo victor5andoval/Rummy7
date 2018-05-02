@@ -10,6 +10,6 @@ public class Rummy7Constants {
     public static boolean CARD_BOOL_RED = true;
     public static boolean CARD_BOOL_BLACK = false;
 
-
+    public static int PLAYER_DEFAULT_DECK_SIZE = 7;
 
 }

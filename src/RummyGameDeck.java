@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Map;
 import java.util.Stack;
 
@@ -12,18 +13,12 @@ public class RummyGameDeck {
         fillRummyGameDeck();
     }
 
-    public RummyGameDeck(ArrayList<Card> cards) throws Exception{
-        if (cards != null && !cards.isEmpty()){
-            this.cards = cards;
-        }else throw new Exception("Cannot initialize RummyGameDeck with empty or null cards!");
+    public RummyGameDeck(ArrayList<Card> cards){
+        this.cards = cards;
     }
 
     public ArrayList<Card> getCards(){
         return this.cards;
-    }
-
-    public void shuffleCards(){
-        //TODO
     }
 
     //print all the cards
@@ -40,7 +35,6 @@ public class RummyGameDeck {
                 for (int value = 2; value < 15; value++) {
                     boolean cardColor = true;
                     char cardSuit = Character.MIN_VALUE;
-
 
                     if (colorCounter == 0){
                         //black
