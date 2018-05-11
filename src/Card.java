@@ -31,8 +31,27 @@ public class Card {
         this.color = color;
     }
 
+    // readable card value
     public String toString(){
-        return String.format("%s of %s", String.valueOf(this.suit),String.valueOf(this.value) )
-    }
-}
+        String tempColor = this.color ? "red" : "black";
+        String tempSuit = "";
+        switch (this.suit){
+            case('c'):tempSuit = "clubs";       break;
+            case('s'):tempSuit = "spades";      break;
+            case('d'):tempSuit = "diamonds";    break;
+            case('h'):tempSuit = "hearts";      break;
+        }
+        String tempValue = "";
+        if (this.value > 10){
+            switch (this.value){
+                case(11):tempValue = "J";break;
+                case(12):tempValue = "Q";break;
+                case(13):tempValue = "K";break;
+                case(14):tempValue = "A";break;
+            }
+        } else {tempValue = String.valueOf(this.value);}
+        
+        
+        return String.format("%-6s %-2s of %1s", tempColor,tempValue,tempSuit );
+    }}
 

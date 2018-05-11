@@ -23,9 +23,7 @@ public class RummyGameDeck {
 
     //print all the cards
     public void printlnCards(){
-        this.getCards().forEach(card -> {
-            System.out.println( "value: " + String.valueOf(card.getValue()) + " suit: " + card.getSuit() + " color: " + card.isColor());
-        });
+        this.getCards().forEach(System.out::println);
     }
 
     //Fill up RummyGameDeck with Cards excluding the Joker
