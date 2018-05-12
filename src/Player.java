@@ -7,7 +7,7 @@ public class Player {
     //TODO to add playerGame or not?
 
     public Player(String name) {
-        if (name != null && name != "") setName(name);
+        if (name != null && !name.equals("")) setName(name);
         setScore(0);
         setDeck(new RummyGameDeck(new ArrayList<Card>()));
     }

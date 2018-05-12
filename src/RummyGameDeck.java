@@ -54,11 +54,7 @@ public class RummyGameDeck {
                         }
                     }
 
-                    Card card = new Card();
-
-                    card.setColor(cardColor);
-                    card.setSuit(cardSuit);
-                    card.setValue(value);
+                    Card card = new Card(cardColor, value, cardSuit);
 
                     this.getCards().add(card);
                 }

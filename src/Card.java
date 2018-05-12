@@ -5,6 +5,10 @@ public class Card {
     private int value;
     private boolean color;
 
+    public Card(boolean color, int val, char suit ){
+        this.suit = suit; this.value = val; this.color = color;
+    }
+
     public char getSuit() {
         return suit;
     }
@@ -52,6 +56,6 @@ public class Card {
         } else {tempValue = String.valueOf(this.value);}
         
         
-        return String.format("%-6s %-2s of %1s", tempColor,tempValue,tempSuit );
+        return String.format("%-5s %2s of %1s", tempColor,tempValue,tempSuit );
     }}
 
